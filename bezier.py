@@ -22,7 +22,7 @@ class bezier_curve:
     def point(t, points):
         plotpoints = points
         while len(plotpoints) > 1:
-            plotpoints = bezier_curve.points(t, plotpoints)
+            plotpoints = bezier_curve.interpolated_points(t, plotpoints)
 
         return plotpoints[0]
 
